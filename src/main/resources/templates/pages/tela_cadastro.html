@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org/" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Interactive Library - Cadastro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="StyleSheet" href="/css/tela_cadastro.css" />
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+</head>
+<body>
+    <div id="content-container">
+        <div id="bg_tela_de_cadastro"></div>
+        <div id="tela_cadastro"></div>
+	
+		<form action="/usuario/cadastro" th:object="${usuario}" method="post">
+	    <div id="botao_cadastrar">
+       		<button type="submit" class="texto_cadastrar">Cadastrar</button>
+   		</div>
+	        
+        <div id="texto_nome">
+            <input type="text" id="campo_nome" placeholder="Nome de Usuário" name:"nome" th:field="*{nome}" required />
+        </div>
+
+        <div id="texto_email">
+            <input type="email" id="campo_email" placeholder="Email" name:"email" th:field="*{email}" required />
+        </div>
+
+        <div id="texto_senha">
+			<input type="password" id="campo_senha" placeholder="Senha" name:"senha" th:field="*{senha}" required />
+		</div>
+        
+        <div id="texto_data">
+        	<input type="date" id="campo_data" name:"dataNasc" th:field="*{dataNasc}" required />
+        </div>
+        
+		</form>
+
+        <div id="sublinhado_cadastro"></div>
+
+        <div id="cadastro">
+            Cadastro
+        </div>
+    </div>
+</body>
+</html>

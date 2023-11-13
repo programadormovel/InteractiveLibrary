@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Tela inicial</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="/css/tela_inicial.css" />
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+
+	</head>
+	<body>
+		<div id="content-container" >
+			<div id="bg_tela_inicial"></div>
+			<div id="topo_da_pagina"></div>
+			<img src="../static/skins/videos.png" id="botao_videos" />
+			<img src="../static/skins/livros.png" id="botao_livros" />
+			<div id="sobre_nos" >
+				Sobre nós
+			</div>
+			<div id="espaco_pesquisar"  ></div>
+			<div id="pesquisar" >
+				Pesquisar
+			</div>
+			<div id="nome_interactive_library" >
+				Interactive Library
+			</div>
+
+			<img src="/images/skins/logo_interactive_library.png" id="logo_interactive_library" />
+			<div id="barra_lateral"></div>
+
+			<a id="botao_livros_link" th:href="@{materias_livros}" >
+			<img src="/images/skins/livros.png" id="botao_livros" />
+			</a>
+
+			<a id="botao_videos_link" th:href="@{materias_videos}" >
+			<img src="/images/skins/videos.png" id="botao_videos" />
+			</a>
+
+			<a id="lateral_videos_link" th:href="@{materias_videos}" >
+			<img src="/images/skins/videos.png" id="lateral_videos" />
+			</a>
+
+			<a id="lateral_livros_link" th:href="@{materias_livros}" >
+			<img src="/images/skins/livros.png" id="lateral_livros" />
+			</a>
+
+			<a id="_perfil_link" th:href="@{tela_perfil}" >
+			<img src="/images/skins/perfil.png" id="perfil" />
+			</a>
+
+		</div>
+		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Livro_1</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="/css/livro_pag3.css" />
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+		
+	</head>
+	<body>
+		<div id="content-container">
+
+			<div id="bg_livro_pag2"></div>
+			<div id="barra_lateral"></div>
+			<div id="topo_da_pagina"></div>
+
+			<a id="lateral_videos_link" th:href="@{materias_videos}" >
+			<img src="/images/skins/videos.png" id="lateral_videos" />
+			</a>
+
+			<a id="lateral_livros_link" th:href="@{materias_livros}" >
+			<img src="/images/skins/livros.png" id="lateral_livros" />
+			</a>
+
+			<a id="_perfil_link" th:href="@{tela_perfil}" >
+			<img src="/images/skins/perfil.png" id="perfil" />
+			</a>
+
+			<div id="botao_voltar"></div>
+			<a id="botao_voltar_link" th:href="@{materias_livros}" >
+			<div id="texto_voltar" >
+				Voltar
+			</div>
+			
+			</a>
+			<div id="sobre_nos" >
+				Sobre nós
+			</div>
+
+			<div id="espaco_pesquisar"  ></div>
+			<div id="pesquisar" >
+				Pesquisar
+			</div>
+
+			<a id="nome_interactive_library_link" th:href="@{tela_inicial}" >
+			<div id="nome_interactive_library" >
+				Interactive Library
+			</div>
+
+			</a>
+			<a id="logo_interactive_library_link" th:href="@{tela_inicial}" >
+			<img src="/images/skins/logo_interactive_library.png" id="logo_interactive_library" />
+			</a>
+
+			<img src="/images/skins/pagina_3.png" id="pagina_3" />
+
+			<img src="/images/skins/seta_direita.png" id="seta_direita" />
+	
+			<a id="pagina_2_link" th:href="@{livro_pag2}" >
+			<img src="/images/skins/seta_esquerda.png" id="seta_esquerda" />
+			</a>
+
+			<div id="borda_livro"></div>
+			<div id="linha_separacao"></div>
+			<div id="caixa_pagina"></div>
+			<div id="caixa_zoom"></div>
+			<div id="pagina_livro" >
+				79 / 174
+			</div>
+			<div id="zoom" >
+				- 70% +
+			</div>
+			<div id="materias_livro" >
+				Língua Portuguesa, Língua Estrangeira e Educação Artística
+			</div>
+			<div id="ano_livro" >
+				2021
+			</div>
+
+		</div>
+		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
+	</body>
+</html>

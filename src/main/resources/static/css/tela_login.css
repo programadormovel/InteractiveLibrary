@@ -1,0 +1,194 @@
+
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1468px; width: 1468px; height: 820px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#bg_tela_de_login {
+	top: 0px;
+	left: 0px;
+	width: 1468px;
+	height: 1100px;
+	background:rgba(229,229,229,1);
+	z-index: -2;
+}
+
+
+#tela_login {
+	top: 34px;
+	left: 167px;
+	width: 1200px;
+	height: 750px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	border: 4px solid #000000;
+	background:rgba(255,255,255,1);
+	z-index: -1;
+}
+
+
+#esqueceu_a_senha_ {
+	top: 488px;
+	left: 243px;
+	width: 180px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	color:#0538EB;
+}
+
+
+#cadastre_se {
+	top: 488px;
+	left: 458px;
+	width: 115px;
+	height: 27px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 1.6px;
+	color:#0638EC;
+}
+
+
+#botao_entrar {
+    top: 437px;
+    left: 261px;
+    width: 307px;
+    height: 41px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(10.69,17.11,171.06,1);
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.texto_entrar {
+    background: rgba(10.69, 17.11, 171.06, 1);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    width: 290px;
+    font-family: 'Times New Roman', Times, serif; /* Defina a fonte desejada */
+}
+
+
+#texto_senha {
+	top: 360px;
+	left: 234px;
+	width: 371px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 24px;
+	text-align: left;
+	letter-spacing: 0.48px;
+	color:#000000;
+}
+
+#campo_senha {
+    width: 350px;
+    height: 44px;
+    font-size: 24px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background: rgba(229, 229, 229, 1);
+    padding-left: 15px;
+}
+
+
+#texto_email {
+	top: 295px;
+	left: 234px;
+	width: 371px;
+	height: 60px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 24px;
+	color:#000000;
+}
+
+#campo_email {
+	width: 350px;
+	height: 44px;
+	font-size: 22px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(229,229,229,1);
+	padding-left: 15px;
+}
+
+
+#linha_de_separacao {
+	top: 428px;
+	left: 406px;
+	width: 434px;
+	height: 1px;
+	
+	-ms-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	transform:rotate(90deg);
+	background:#000000;
+}
+
+
+#texto_introducao {
+	top: 231px;
+	left: 681px;
+	width: 649px;
+	height: 636px;
+	overflow: hidden;
+	font-family: Courier Prime;
+	font-size: 32px;
+	text-align: left;
+	line-height: 30px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 4.8px;
+	color:#000000;
+}
+
+
+#titulo_login {
+	top: 97px;
+	left: 535px;
+	width: 414px;
+	height: 115px;
+	overflow: hidden;
+	font-family: Courier Prime;
+	font-size: 64px;
+	text-align: center;
+	line-height: 30px;
+	padding-top: 34px;
+	margin-top: -34px;
+	letter-spacing: 9.6px;
+	color:#000000;
+}

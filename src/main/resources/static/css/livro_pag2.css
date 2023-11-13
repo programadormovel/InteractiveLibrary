@@ -1,0 +1,341 @@
+/*
+	@name livro_pag_1
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#bg_livro_pag2 {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(229,229,229,1);
+	z-index: -2;
+}
+
+
+#topo_da_pagina {
+	top: 0px;
+	left: 0px;
+	width: 1455px;
+	height: 92px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(0,12.11,121.12,1);
+}
+
+
+#sobre_nos {
+	top: 35px;
+	left: 1200px;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#espaco_pesquisar {
+	top: 30px;
+	left: 910px;
+	width: 273px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#pesquisar {
+	top: 35px;
+	left: 924px;
+	width: 218px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#393939;
+}
+
+
+#nome_interactive_library {
+	top: 20px;
+	left: 80px;
+	width: 408px;
+	height: 100px;
+	overflow: hidden;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#logo_interactive_library {
+	top: 0px;
+	left: 0px;
+	width: 103px;
+	height: 95px;
+}
+
+
+#barra_lateral {
+	opacity:0.5799999833107;
+	top: 95px;
+	left: 0px;
+	width: 84px;
+	height: 929px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(255,255,255,0.58);
+}
+
+#lateral_videos {
+	top: 340px;
+	left: 0px;
+	width: 85px;
+	height: 75px;
+}
+
+
+#lateral_livros {
+	top: 235px;
+	left: -5px;
+	width: 93px;
+	height: 93px;
+}
+
+
+#perfil {
+	top: 139px;
+	left: 8px;
+	width: 66px;
+	height: 70px;
+}
+
+
+#botao_voltar {
+	top: 30px;
+	left: 1316px;
+	width: 90px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#texto_voltar {
+	top: 38px;
+	left: 1330px;
+	width: 123px;
+	height: 57px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: left;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#pagina_2 {
+	top: 146px;
+	left: 679px;
+	width: 600px;
+	height: 780px;
+}
+
+
+#seta_direita {
+	top: 532px;
+	left: 1297px;
+	width: 37px;
+	height: 35px;
+}
+
+
+#seta_esquerda {
+	top: 532px;
+	left: 617px;
+	width: 37px;
+	height: 35px;
+}
+
+
+#borda_livro {
+	top: 146px;
+	left: 679px;
+	width: 596px;
+	height: 775px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	border: 5px solid #000000;
+}
+
+
+#linha_separacao {
+	top: 962px;
+	left: 958px;
+	width: 31px;
+	height: 1px;
+	
+	-ms-transform:rotate(90deg);
+	-o-transform:rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	transform:rotate(90deg);
+	background:#000000;
+}
+
+
+#caixa_pagina {
+	top: 947px;
+	left: 837px;
+	width: 125px;
+	height: 30px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(197.84,194.54,194.54,1);
+}
+
+
+#caixa_zoom {
+	top: 947px;
+	left: 1021px;
+	width: 63px;
+	height: 30px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(197.84,194.54,194.54,1);
+}
+
+
+#pagina_livro {
+	top: 954px;
+	left: 850px;
+	width: 150px;
+	height: 80px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 25px;
+	text-align: left;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#zoom {
+	top: 954px;
+	left: 1005px;
+	width: 150px;
+	height: 37px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 25px;
+	text-align: left;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#materias_livro {
+	top: 263px;
+	left: 88px;
+	width: 608px;
+	height: 270px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 36px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	line-height: 50px;
+	padding-top: 18px;
+	margin-top: -18px;
+	letter-spacing: 1.8px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000000;
+	-ms-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-o-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-webkit-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-moz-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	color:#000000;
+}
+
+
+#ano_livro {
+	top: 492px;
+	left: 74px;
+	width: 636px;
+	height: 293px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 22px;
+	margin-top: -22px;
+	letter-spacing: 2px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000000;
+	-ms-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-o-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-webkit-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	-moz-text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	text-shadow:1px 5px 4px rgba(0,0,0,0.25);
+	color:#000000;
+	z-index: -1;
+}
+
+
+
+/* Add your custom CSS here */

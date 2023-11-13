@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" >
+	<head>
+		<meta http-equiv="content-type" content="text/html" charset="utf-8" />
+		<title>Matérias_Vídeos</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="" >
+		<link rel="StyleSheet" href="/css/materias_videos.css" />
+		<script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+
+	</head>
+	<body>
+		<div id="content-container" >
+			<div id="bg_materias_videos"></div>
+			<div id="topo_da_pagina"></div>
+
+			<a id="materia_geografia_link" th:href="@{video_geografia}" >
+			<img src="/images/skins/materia_geografia.png" id="materia_geografia" />
+			</a>
+
+			<a id="materia_matematica_link" th:href="@{video_matematica}" >
+			<img src="/images/skins/materia_matematica.png" id="materia_matematica" />
+			</a>
+
+			<a id="materia_portugues_link" th:href="@{video_portugues}" >
+			<img src="/images/skins/materia_portugues.png" id="materia_portugues" />
+			</a>
+
+			<img src="/images/skins/materia_ciencias.png" id="materia_ciencias" />
+
+			<img src="/images/skins/materia_historia.png" id="materia_historia" />
+
+			<img src="/images/skins/videos.png" id="identificador" />
+
+			<div id="matematica" >
+				Matemática
+			</div>
+			<div id="geografia" >
+				Geografia
+			</div>
+			<div id="ciencias" >
+				Ciências
+			</div>
+			<div id="portugues" >
+				Português
+			</div>
+			<div id="historia" >
+				História
+			</div>
+			<div id="botao_voltar"  ></div>
+
+			<a id="texto_voltar_link" th:href="@{tela_inicial}" >
+			<div id="texto_voltar" >
+				<span style="font-style:normal; font-weight:normal; text-decoration:NONE; ">Voltar</span><span style="font-size:18; font-style:normal; font-weight:normal; text-decoration:NONE; "> </span>
+			</div>
+			</a>
+
+			<div id="sobre_nos" >
+				Sobre nós
+			</div>
+
+			<div id="espaco_pesquisar"></div>
+			<div id="pesquisar" >
+				Pesquisar
+			</div>
+
+			<a id="nome_interactive_library_link" th:href="@{tela_inicial}" >
+			<div id="nome_interactive_library" >
+				Interactive Library
+			</div>
+			</a>
+
+			<a id="logo_interactive_library_link" th:href="@{tela_inicial}" >
+			<img src="/images/skins/logo_interactive_library.png" id="logo_interactive_library" />
+			</a>
+
+			<div id="barra_lateral"></div>
+
+			<a id="lateral_videos_link" th:href="@{materias_videos}" >
+			<img src="/images/skins/videos.png" id="lateral_videos" />
+			</a>
+
+			<a id="lateral_livros_link" th:href="@{materias_livros}" >
+			<img src="/images/skins/livros.png" id="lateral_livros" />
+			</a>
+
+			<a id="_perfil_link" th:href="@{tela_perfil}" >
+			<img src="/images/skins/perfil.png" id="perfil" />
+			</a>
+
+		</div>
+		<script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
+	</body>
+</html>

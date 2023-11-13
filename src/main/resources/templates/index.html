@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Padaria</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css//bootstrap.min.css">
+  
+</head>
+<body> 
+    <div class="container" >
+    <h1 class="text-center mt-5">Olá, Mundo!</h1>
+    	<div class="d-flex justify-content-evenly p-3 m-3 shadow rounded-3">
+    		<a th:href="@{/api/usuario/login}" class="btn btn-primary btn-lg shadow p-3">Acessar o Sistema</a>
+    		<a th:href="@{/api/produto/lista}" class="btn btn-warning btn-lg shadow p-3">Nossos Produtos</a>
+    		<a th:href="@{/api/usuario/novo-login}" class="btn btn-success btn-lg shadow p-3">Criar uma Conta</a>
+    	</div>
+
+    </div>
+   	<script type="text/javascript" src="/js/scripts.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

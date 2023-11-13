@@ -1,0 +1,223 @@
+/*
+	@name tela_de_cadastro
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 820px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#bg_tela_cadastro {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(229,229,229,1);
+}
+
+
+#tela_cadastro {
+	top: 152px;
+	left: 391px;
+	width: 665px;
+	height: 475px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	border: 4px solid #000000;
+	background: rgba(255, 255, 255, 1);
+  }
+  
+  #botao_cadastrar {
+	top: 521px;
+	left: 620px;
+	width: 200px;
+	height: 31px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background: rgba(10.69, 17.11, 171.06, 1);
+  }
+  
+.texto_cadastrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: rgba(10.69, 17.11, 171.06, 1);
+    border-radius: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+  
+  #campo_data {
+	top: 385px;
+	left: 857px;
+	width: 119px;
+	height: 29px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: rgba(229, 229, 229, 1);
+  }
+  
+  #campo_senha {
+	top: 438px;
+	left: 463px;
+	width: 350px;
+	height: 29px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: rgba(229, 229, 229, 1);
+  }
+  
+  #campo_email {
+	top: 385px;
+	left: 463px;
+	width: 350px;
+	height: 28px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: rgba(229, 229, 229, 1);
+  }
+  
+  #campo_nome {
+	top: 332px;
+	left: 463px;
+	width: 458px;
+	height: 30px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: rgba(229, 229, 229, 1);
+  }
+  
+  #texto_data {
+	top: 385px;
+	left: 845px;
+	width: 370px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	color: #000000;
+  }
+  
+  #texto_senha {
+	top: 438px;
+	left: 463px;
+	width: 370px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	color: #393939;
+  }
+  
+  #texto_email {
+	top: 385px;
+	left: 463px;
+	width: 370px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	color: #393939;
+  }
+  
+  #texto_sobrenome {
+	top: 332px;
+	left: 713px;
+	width: 370px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	color: #393939;
+  }
+  
+  #texto_nome {
+	top: 333px;
+	left: 463px;
+	width: 475px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 16px;
+	text-align: left;
+	line-height: 24px;
+	letter-spacing: 0.8px;
+	color: #393939;
+  }
+  
+
+
+#sublinhado_cadastro {
+	top: 278px;
+	left: 570px;
+	width: 300px;
+	height: 1px;
+	background:#000000;
+}
+
+
+#cadastro {
+	top: 250px;
+	left: 500px;
+	width: 449px;
+	height: 83px;
+	overflow: hidden;
+	font-family: Courier Prime;
+	font-size: 30px;
+	text-align: center;
+	line-height: 24px;
+	padding-top: 6px;
+	margin-top: -6px;
+	letter-spacing: 1.5px;
+	color:#000000;
+}
+
+
+
+/* Add your custom CSS here */

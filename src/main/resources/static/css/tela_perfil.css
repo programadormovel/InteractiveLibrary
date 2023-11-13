@@ -1,0 +1,408 @@
+/*
+	@name tela_de_perfil__fazer_
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#bg_tela_de_perfil {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(229,229,229,1);
+}
+
+
+#topo_da_pagina {
+	top: 0px;
+	left: 0px;
+	width: 1455px;
+	height: 92px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(0,12.11,121.12,1);
+}
+
+
+#sobre_nos {
+	top: 35px;
+	left: 1200px;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#espaco_pesquisar {
+	top: 30px;
+	left: 910px;
+	width: 273px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#pesquisar {
+	top: 35px;
+	left: 924px;
+	width: 218px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#393939;
+}
+
+
+#nome_interactive_library {
+	top: 20px;
+	left: 80px;
+	width: 408px;
+	height: 100px;
+	overflow: hidden;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#logo_interactive_library {
+	top: 0px;
+	left: 0px;
+	width: 103px;
+	height: 95px;
+}
+
+
+#barra_lateral {
+	opacity:0.5799999833107;
+	top: 95px;
+	left: 0px;
+	width: 84px;
+	height: 929px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(255,255,255,0.58);
+}
+
+#lateral_videos {
+	top: 340px;
+	left: 0px;
+	width: 85px;
+	height: 75px;
+}
+
+
+#lateral_livros {
+	top: 235px;
+	left: -5px;
+	width: 93px;
+	height: 93px;
+}
+
+
+#perfil {
+	top: 139px;
+	left: 8px;
+	width: 66px;
+	height: 70px;
+}
+
+
+#botao_voltar {
+	top: 30px;
+	left: 1316px;
+	width: 90px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#texto_voltar {
+	top: 38px;
+	left: 1330px;
+	width: 123px;
+	height: 57px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: left;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#rectangle_59 {
+	top: 139px;
+	left: 720px;
+	width: 275px;
+	height: 300px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_61 {
+	top: 501px;
+	left: 720px;
+	width: 275px;
+	height: 300px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_62 {
+	top: 501px;
+	left: 1084px;
+	width: 275px;
+	height: 300px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#rectangle_60 {
+	top: 139px;
+	left: 1084px;
+	width: 275px;
+	height: 300px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #000000;
+	background:rgba(255,255,255,1);
+}
+
+
+#tempo_semanal {
+	top: 278px;
+	left: 738px;
+	width: 247px;
+	height: 103px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#quantidade_horas {
+	top: 367px;
+	left: 787px;
+	width: 148px;
+	height: 41px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#materia_vista {
+	top: 305px;
+	left: 1115px;
+	width: 225px;
+	height: 57px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#materia {
+	top: 367px;
+	left: 1157px;
+	width: 141px;
+	height: 39px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#livros_lidos {
+	top: 657px;
+	left: 747px;
+	width: 238px;
+	height: 58px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#quantidade_livros {
+	top: 727px;
+	left: 810px;
+	width: 104px;
+	height: 38px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#videos_acessados {
+	top: 662px;
+	left: 1112px;
+	width: 228px;
+	height: 53px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#quantidade_videos {
+	top: 733px;
+	left: 1169px;
+	width: 124px;
+	height: 32px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: center;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#informacoes_perfil {
+	top: 117px;
+	left: 116px;
+	width: 507px;
+	height: 847px;
+}
+
+
+#tempo_estudo {
+	top: 165px;
+	left: 820px;
+	width: 80px;
+	height: 80px;
+}
+
+
+#materia_livros {
+	top: 150px;
+	left: 1165px;
+	width: 130px;
+	height: 130px;
+}
+
+
+#livros {
+	top: 515px;
+	left: 795px;
+	width: 130px;
+	height: 130px;
+}
+
+
+#videos {
+	top: 515px;
+	left: 1165px;
+	width: 120px;
+	height: 120px;
+}
+
+
+
+/* Add your custom CSS here */

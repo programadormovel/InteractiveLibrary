@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>Editar Usuário</title>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="container my-5">
+            <form class="row g-3 shadow form-cad" action="#" enctype="multipart/form-data" 
+            th:action="@{/api/usuario/editar/{id}(id=*{id})}" th:object="${usuario}" method="post">
+             
+              	<div class="form-group col-md-12">
+					<label for="uploadImage" class="form-label">Editar Foto de Perfil:</label>
+					<input class="form-control" type="file" onchange="preViewImg();" name="file" accept="image/*" id="uploadImage">
+				</div>
+              	<div class="form-group col-md-12">
+					<label for="preView" class="form-label">Foto:</label>
+					<img id="preView" alt="..." th:src="*{foto} ? @{${'/api/usuario/showImage/'+ usuario.id}} : ${noImage}"
+					class="rounded d-block  mx-auto img-fluid" />
+				</div>
+				
+				<div class="col-md-2">
+                    <label for="inputId" class="form-label">Id: </label>
+                    <input type="text" class="form-control" id="inputId" th:field="*{id}"  readOnly />	  	
+                </div> 
+				<div class="col-md-5">
+                    <label for="inputCat" class="form-label">Acesso: </label>
+                    <input type="text" class="form-control" id="inputCat" th:field="*{nivelAcesso}" readOnly />	  	
+                </div> 
+                <div class="col-md-5">
+                    <label for="inputStatus" class="form-label">Status: </label>
+                    <input type="text" class="form-control" id="inputStatus" th:field="*{statusUsuario}"  readOnly />	  	
+                </div> 
+                <div class="col-md-12">
+                  <label for="inputNome" class="form-label">Nome: </label>
+                  <input type="text" class="form-control" id="inputNome" th:field="*{nome}" />
+                </div>
+                <div class="col-md-12">
+                  <label for="inputEmail" class="form-label">Email: </label>
+                  <input type="email" class="form-control" id="inputEmail" th:field="*{email}" readOnly />
+                </div>
+                
+                <div class="col-md-12" hidden>
+                  <label for="inputSenha" class="form-label">Senha: </label>
+                  <input type="text" class="form-control" id="inputSenha" th:field="*{senha}" readOnly />
+                </div>
+                                                
+                <div class="text-center col-md-12 p-2 rounded-2">
+					<span class="fw-bold fs-5 text-success" th:text="${serverMessage}"></span>
+				</div>
+				
+				<div class="col-md-12 text-center">
+					<a th:href="@{/api/usuario/novaSenha/{id}(id=${usuario.id})}">NOVA SENHA</a>		
+				</div>
+                <div class="col-md-12 d-flex justify-content-between">
+                	<div th:if="*{nivelAcesso == 'ADMIN'}">
+                		<a th:href="@{/api/usuario/admin}" class="btn btn-warning shadow"><i class="bi bi-box-arrow-left me-2"></i>Voltar</a>
+                	</div>
+                	<div th:if="*{nivelAcesso == 'USER'}">
+                		<a th:href="@{/api/usuario/user}" class="btn btn-warning shadow"><i class="bi bi-box-arrow-left me-2"></i>Voltar</a>
+                	</div>
+                  	<button type="submit" class="btn btn-primary shadow" >Gravar Meus Dados<i class="bi bi-save ms-2"></i></button>
+                </div>
+              </form>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

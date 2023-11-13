@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<link rel="stylesheet" href="/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/css/style.css">
+
+	<title>Produtos</title>
+</head>
+
+<body>
+	<div class="container">
+	
+		<div id="home" class="d-flex justify-content-between align-items-center p-3 m-3 shadow rounded-3">
+    		<a th:href="@{/api/index}" class="btn btn-primary shadow p-3">Voltar</a>
+    
+    		<h4 class="text-center"> Conheça os nossos Produtos </h4>
+    		
+    		<a th:href="@{/api/index}" class="btn btn-primary shadow p-3">Voltar</a>
+    	</div>
+		<div class="m-5">
+			<div class="list-group my-3 shadow" th:each="produto : ${produtos}">
+				<a href="#" class="list-group-item list-group-item-action">
+					<div class="card">
+						<div class="row g-0">
+							<div class="col-md-4 align-self-center py-2">
+								<img th:src="${produto.foto} ? @{${'/api/produto/showImage/'+ produto.id}} : ${noImage}" 
+								class="rounded d-block mx-auto img-fluid" width="150vw" alt="...">
+							</div>
+							<div class="col-md-8">
+								<div class="card-body">
+									<h5 class="card-title"><span th:text="${produto.nome}"></span> </h5>
+									<p class="card-text" th:text="${produto.descricao}"></p>
+									<p class="card-text" th:text="${produto.preco}"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+	</div>
+	<div class="back">
+		<a href="#home"><span>&#8682;</span></a>
+	</div>
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

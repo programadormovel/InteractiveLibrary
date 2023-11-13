@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+	<title>Padaria - ADMIN</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css//bootstrap.min.css">
+
+</head>
+
+<body>
+	<div class="container">
+	<div th:if="${session.usuarioLogado}">
+		<div class="p-3 m-3 shadow rounded-3">
+			<form th:action="@{/api/usuario/logoff}" th:object="${usuario}" method="post">
+				<h1 class="text-center mt-1">Olá, <span th:text="${session.usuarioLogado.nome}" ></span> ! </h1>
+				
+				<img id="preView" alt="..." th:src="*{foto} ? @{${'/api/usuario/showImage/'+ usuario.id}} : ${noImage}"
+						 class="rounded d-block  mx-auto img-fluid" />
+						 
+				<a th:href="@{/api/usuario/verPerfil/{id}(id=${usuario.id})}">Editar</a>
+			</form>
+		</div>
+		
+		<div class="d-flex justify-content-evenly p-3 m-3 shadow rounded-3">
+			<a th:href="@{/api/usuario/logoff}" class="btn btn-warning btn-lg shadow p-3">Sair</a>
+			<a th:href="@{/api/usuario/todos}" class="btn btn-primary btn-lg shadow p-3">Usuários</a>
+			<div>
+				<a th:href="@{/api/produto/todos}" class="btn btn-success btn-lg shadow p-3">Produtos</a>
+				<a th:href="@{/api/produto/todos-filtro}" class="btn btn-info btn-lg shadow p-3">Produtos com Filtro</a>
+			</div>
+		</div>
+	</div>
+	<div th:unless="${session.usuarioLogado}" class="my-5">
+	  <h1 class="text-center text-danger mt-1"> ACESSO RESTRITO ! </h1>
+	  <a th:href="@{/api/index}" class="btn btn-warning shadow px-5">Voltar</a>
+	</div>
+
+	</div>
+	<script type="text/javascript" src="/js/scripts.js"></script>
+	<script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Interactive Library - login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <link rel="StyleSheet" href="/css/tela_login.css" />
+    <script src="https://secure.exportkit.com/cdn/js/ek_googlefonts.js?v=6"></script>
+</head>
+<body>
+    <div id="content-container">
+        <div id="bg_tela_de_login"></div>
+        <div id="tela_login"></div>
+
+		
+        <div id="esqueceu_a_senha_">
+            Esqueceu a senha?
+        </div>
+        <a id="cadastre_se_link" th:href="@{/usuario/tela_cadastro}">
+            <div id="cadastre_se">
+                Cadastre-se
+            </div>
+        </a>
+
+        <form action="/usuario/acessar1" th:object="${usuario}" method="post">
+	        <div id="botao_entrar">
+				<div id="texto_entrar">
+				<button type="submit" class="texto_entrar">Entrar</button>
+				</div>
+	        </div>
+	        
+	        <div id="texto_senha">
+	            <input type="password" id="campo_senha" placeholder="Senha" name="senha" th:field="*{senha}" />
+	        </div>
+	
+	        <div id="texto_email">
+	            <input type="text" id="campo_email" placeholder="Email" name="email"  th:field="*{email}" />
+	        </div>
+	       
+        </form>
+        <div id="linha_de_separacao"></div>
+        <div id="texto_introducao">
+              Interactive Library <span class="char">%C3%A9 </span> um site criado com o objetivo de auxiliar no aprendizado de pessoas abrangendo os conte<span class="char">%C3%BAd</span>os desde o oitavo ano do ensino fundamental, at<span class="char">%C3%A9 </span> o terceiro ano do ensino m<span class="char">%C3%A9d</span>io.<br/><br/>Nosso site cont<span class="char">%C3%A9m</span> livros e v<span class="char">%C3%ADd</span>eos pra voc<span class="char">%C3%AA </span> estudar, quizzes pra testar seu aprendizado e turmas pra voc<span class="char">%C3%AA </span> se juntar com seus colegas ou alunos.
+        </div>
+        <div id="titulo_login">
+            LOGIN
+        </div>
+    </div>
+    <script>var specialChars = document.querySelectorAll("span.char"); for(var c=0; c<specialChars.length; c++){ specialChars[c].innerHTML = decodeURIComponent(specialChars[c].innerHTML); }</script>
+</body>
+</html>

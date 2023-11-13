@@ -1,0 +1,176 @@
+/*
+	@name tela_inicial
+*/
+/* Only edit this if you know what you are doing! */
+body { margin: 0px; padding: 0px; font-family:"Arial"; overflow-x:hidden; }
+
+/* Only edit this if you know what you are doing! */
+img { position: absolute; display: block; margin: 0px; border: none; padding: 0px; }
+
+/* Only edit this if you know what you are doing! */
+div { position: absolute; }
+
+#content-container { display: block; position: relative; width: 1440px; width: 1440px; height: 1024px; overflow: hidden; display: block;  margin-left: auto; margin-right: auto;  }
+
+#bg_tela_inicial {
+	top: 0px;
+	left: 0px;
+	width: 1440px;
+	height: 1024px;
+	background:rgba(229,229,229,1);
+}
+
+
+#topo_da_pagina {
+	top: 0px;
+	left: 0px;
+	width: 1455px;
+	height: 92px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(0,12.11,121.12,1);
+}
+
+
+#sobre_nos {
+	top: 35px;
+	left: 1200px;
+	width: 200px;
+	height: 40px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#espaco_pesquisar {
+	top: 30px;
+	left: 910px;
+	width: 273px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#pesquisar {
+	top: 35px;
+	left: 924px;
+	width: 218px;
+	height: 45px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 18px;
+	text-align: left;
+	letter-spacing: 0.9px;
+	color:#393939;
+}
+
+#nome_interactive_library {
+	top: 20px;
+	left: 80px;
+	width: 408px;
+	height: 100px;
+	overflow: hidden;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 45px;
+	text-align: center;
+	letter-spacing: 0.9px;
+	color:#FFFFFF;
+}
+
+
+#logo_interactive_library {
+	top: 0px;
+	left: 0px;
+	width: 103px;
+	height: 95px;
+}
+
+
+#botao_voltar {
+	top: 30px;
+	left: 1316px;
+	width: 90px;
+	height: 35px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+	background:rgba(217,217,217,1);
+}
+
+
+#texto_voltar {
+	top: 38px;
+	left: 1330px;
+	width: 123px;
+	height: 57px;
+	overflow: hidden;
+	font-family: Inter;
+	font-size: 20px;
+	text-align: left;
+	line-height: 18px;
+	padding-top: 2px;
+	margin-top: -2px;
+	letter-spacing: 1px;
+	color:#000000;
+}
+
+
+#barra_lateral {
+	opacity:0.5799999833107;
+	top: 95px;
+	left: 0px;
+	width: 84px;
+	height: 929px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background:rgba(255,255,255,0.58);
+}
+
+#lateral_videos {
+	top: 340px;
+	left: 0px;
+	width: 85px;
+	height: 75px;
+}
+
+
+#lateral_livros {
+	top: 235px;
+	left: -5px;
+	width: 93px;
+	height: 93px;
+}
+
+
+#perfil {
+	top: 139px;
+	left: 8px;
+	width: 66px;
+	height: 70px;
+}
+
+#video_geografia {
+	top: 204px;
+	left: 126px;
+	width: 1277px;
+	height: 711px;
+}
+
+/* Add your custom CSS here */
